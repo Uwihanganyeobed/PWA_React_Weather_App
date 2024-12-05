@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <style type="text/css">
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+                margin: 0;
+                background: #0a1f44;
+                display: flex;
+                flex-direction: column; /* Changed to column for better layout */
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                color: #333; /* Changed text color for better readability */
+            }
+        
+            .container {
+                width: 80%;
+                max-width: 800px; /* Added max-width for better layout */
+                background: #fff;
+                border-radius: 20px;
+                padding: 40px 20px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+            }
+
+            .city-name {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            .description {
+                margin: 20px 0;
+                font-size: 1.2em;
+            }
+
+            .features {
+                text-align: left; /* Align text to the left for better readability */
+                margin: 20px 0;
+            }
+
+            .feature-item {
+                margin: 10px 0;
+                font-size: 1em;
+            }
+
+            .refresh-button {
+                padding: 10px 20px;
+                font-size: 1em;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px; /* Added margin for spacing */
+            }
+
+            .refresh-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="city-name">
+                <span>Please go online to check the current weather.</span>
+            </h2>
+            <p class="description">
+                This is a Progressive Web App (PWA) that provides real-time weather updates. 
+                You can add it to your home screen for easy access.
+            </p>
+            <div class="features">
+                <h3>Features of this PWA:</h3>
+                <ul>
+                    <li class="feature-item">Offline access to previously fetched weather data.</li>
+                    <li class="feature-item">Fast loading times and smooth interactions.</li>
+                    <li class="feature-item">Push notifications for weather alerts.</li>
+                    <li class="feature-item">Responsive design for mobile and desktop.</li>
+                </ul>
+            </div>
+            <div class="benefits">
+                <h3>Benefits of Using PWAs:</h3>
+                <ul>
+                    <li class="feature-item">No installation required; runs in the browser.</li>
+                    <li class="feature-item">Can be added to the home screen like a native app.</li>
+                    <li class="feature-item">Improved performance and user experience.</li>
+                    <li class="feature-item">Works on any device with a web browser.</li>
+                </ul>
+            </div>
+            <button class="refresh-button" onclick="location.reload();">Refresh Weather</button>
+        </div>
+    </body>
+</html>
